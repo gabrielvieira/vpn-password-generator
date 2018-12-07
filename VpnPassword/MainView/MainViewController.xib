@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="generateButton" destination="9Sf-yD-bX8" id="zEZ-a9-JZo"/>
+                <outlet property="passwordField" destination="vld-Qt-M2e" id="MpF-dV-ZwP"/>
+                <outlet property="saveButton" destination="WjC-Gk-GL7" id="U2P-wW-OwU"/>
+                <outlet property="secretField" destination="OMu-3W-kPS" id="GZj-bm-JJ5"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vld-Qt-M2e">
+                    <rect key="frame" x="115" y="221" width="120" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="3is-Wa-Whc"/>
+                        <constraint firstAttribute="width" constant="120" id="HdT-o2-86b"/>
+                    </constraints>
+                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="Et9-ml-Dbf">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </secureTextFieldCell>
+                </secureTextField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WjC-Gk-GL7">
+                    <rect key="frame" x="136" y="49" width="78" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="hkS-zX-HYC"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Salvar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8hJ-6Z-tde">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="saveDidTap:" target="-2" id="VoN-H3-B7E"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-yD-bX8">
+                    <rect key="frame" x="138" y="13" width="74" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="YSb-k4-gq5"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Gerar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SDE-Lo-F29">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="generateDidTap:" target="-2" id="wkM-Yd-saa"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DZh-zY-oQg">
+                    <rect key="frame" x="113" y="323" width="57" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="NQG-gR-rHL"/>
+                        <constraint firstAttribute="height" constant="17" id="OJB-3x-SYL"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Secret" id="AhT-ou-YKN">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T7k-OE-YSe">
+                    <rect key="frame" x="113" y="251" width="62" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="2KW-D6-9Rq"/>
+                        <constraint firstAttribute="width" constant="58" id="khW-zz-rkP"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password" id="RrS-YV-XhP">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s68-Fd-dvG">
+                    <rect key="frame" x="134" y="85" width="82" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="3qI-GI-xwP"/>
+                        <constraint firstAttribute="width" constant="70" id="xnh-Uy-vqc"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Limpar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fhV-Jp-JRO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="clearDidTap:" target="-2" id="7Eu-Dh-EgY"/>
+                    </connections>
+                </button>
+                <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OMu-3W-kPS">
+                    <rect key="frame" x="115" y="293" width="120" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="0W3-Qf-NIM"/>
+                        <constraint firstAttribute="height" constant="25" id="Vrx-DK-eXr"/>
+                    </constraints>
+                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="6nG-KP-nR3">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </secureTextFieldCell>
+                </secureTextField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="T7k-OE-YSe" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="115" id="0iG-9U-qJl"/>
+                <constraint firstItem="WjC-Gk-GL7" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="4BX-mi-g3D"/>
+                <constraint firstItem="T7k-OE-YSe" firstAttribute="top" secondItem="OMu-3W-kPS" secondAttribute="bottom" constant="25" id="AfB-Yd-V8w"/>
+                <constraint firstItem="vld-Qt-M2e" firstAttribute="top" secondItem="T7k-OE-YSe" secondAttribute="bottom" constant="5" id="Ikk-kn-WlE"/>
+                <constraint firstItem="vld-Qt-M2e" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="LvO-hY-dBF"/>
+                <constraint firstItem="9Sf-yD-bX8" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="MGz-aB-jkc"/>
+                <constraint firstItem="9Sf-yD-bX8" firstAttribute="top" secondItem="WjC-Gk-GL7" secondAttribute="bottom" constant="15" id="Tsi-jg-thB"/>
+                <constraint firstItem="OMu-3W-kPS" firstAttribute="top" secondItem="DZh-zY-oQg" secondAttribute="bottom" constant="5" id="VZd-5K-PSr"/>
+                <constraint firstItem="WjC-Gk-GL7" firstAttribute="top" secondItem="s68-Fd-dvG" secondAttribute="bottom" constant="15" id="duQ-GT-cfk"/>
+                <constraint firstItem="OMu-3W-kPS" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="e3f-vV-pkL"/>
+                <constraint firstItem="s68-Fd-dvG" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="ocv-Af-OLY"/>
+                <constraint firstItem="DZh-zY-oQg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="60" id="rA2-eW-G8m"/>
+                <constraint firstAttribute="bottom" secondItem="9Sf-yD-bX8" secondAttribute="bottom" constant="20" id="tWe-rZ-ttM"/>
+                <constraint firstItem="DZh-zY-oQg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="115" id="vo2-cf-dWs"/>
+            </constraints>
+            <point key="canvasLocation" x="-90" y="58"/>
+        </customView>
+    </objects>
+</document>

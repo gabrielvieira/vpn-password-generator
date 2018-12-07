@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB1AD6D521BAAF4100F3663E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD6D421BAAF4100F3663E /* AppDelegate.m */; };
+		AB1AD6D721BAAF4100F3663E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1AD6D621BAAF4100F3663E /* Assets.xcassets */; };
+		AB1AD6DA21BAAF4100F3663E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1AD6D821BAAF4100F3663E /* MainMenu.xib */; };
+		AB1AD6DD21BAAF4100F3663E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD6DC21BAAF4100F3663E /* main.m */; };
+		AB1AD6E821BAAF4100F3663E /* VpnPasswordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD6E721BAAF4100F3663E /* VpnPasswordTests.m */; };
+		AB1AD6F321BAAF4100F3663E /* VpnPasswordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD6F221BAAF4100F3663E /* VpnPasswordUITests.m */; };
+		AB1AD71321BAB0D000F3663E /* GeneratorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD71221BAB0D000F3663E /* GeneratorManager.m */; };
+		AB1AD71621BAB0E000F3663E /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD71421BAB0E000F3663E /* LocalStorage.m */; };
+		AB1AD71A21BAB0F300F3663E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD71821BAB0F300F3663E /* MainViewController.m */; };
+		AB1AD71B21BAB0F300F3663E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1AD71921BAB0F300F3663E /* MainViewController.xib */; };
+		AB1AD72721BAB0FD00F3663E /* AGBase32.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD71C21BAB0FD00F3663E /* AGBase32.m */; };
+		AB1AD72821BAB0FD00F3663E /* AGStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72021BAB0FD00F3663E /* AGStringEncoding.m */; };
+		AB1AD72921BAB0FD00F3663E /* AGTotp.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72121BAB0FD00F3663E /* AGTotp.m */; };
+		AB1AD72A21BAB0FD00F3663E /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72321BAB0FD00F3663E /* AGClock.m */; };
+		AB1AD72B21BAB0FD00F3663E /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72421BAB0FD00F3663E /* AGOtp.m */; };
+		AB1AD72E21BAB10500F3663E /* MenuHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72D21BAB10500F3663E /* MenuHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB1AD6E421BAAF4100F3663E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB1AD6C821BAAF4100F3663E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB1AD6CF21BAAF4100F3663E;
+			remoteInfo = VpnPassword;
+		};
+		AB1AD6EF21BAAF4100F3663E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB1AD6C821BAAF4100F3663E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB1AD6CF21BAAF4100F3663E;
+			remoteInfo = VpnPassword;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB1AD6D021BAAF4100F3663E /* VpnPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VpnPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1AD6D321BAAF4100F3663E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB1AD6D421BAAF4100F3663E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB1AD6D621BAAF4100F3663E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB1AD6D921BAAF4100F3663E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AB1AD6DB21BAAF4100F3663E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1AD6DC21BAAF4100F3663E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB1AD6DE21BAAF4100F3663E /* VpnPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VpnPassword.entitlements; sourceTree = "<group>"; };
+		AB1AD6E321BAAF4100F3663E /* VpnPasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VpnPasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1AD6E721BAAF4100F3663E /* VpnPasswordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VpnPasswordTests.m; sourceTree = "<group>"; };
+		AB1AD6E921BAAF4100F3663E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1AD6EE21BAAF4100F3663E /* VpnPasswordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VpnPasswordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1AD6F221BAAF4100F3663E /* VpnPasswordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VpnPasswordUITests.m; sourceTree = "<group>"; };
+		AB1AD6F421BAAF4100F3663E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1AD71121BAB0D000F3663E /* GeneratorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneratorManager.h; path = GeneratorManager/GeneratorManager.h; sourceTree = "<group>"; };
+		AB1AD71221BAB0D000F3663E /* GeneratorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneratorManager.m; path = GeneratorManager/GeneratorManager.m; sourceTree = "<group>"; };
+		AB1AD71421BAB0E000F3663E /* LocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalStorage.m; path = VpnPassword/LocalStorage/LocalStorage.m; sourceTree = SOURCE_ROOT; };
+		AB1AD71521BAB0E000F3663E /* LocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalStorage.h; path = VpnPassword/LocalStorage/LocalStorage.h; sourceTree = SOURCE_ROOT; };
+		AB1AD71721BAB0F300F3663E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = MainView/MainViewController.h; sourceTree = "<group>"; };
+		AB1AD71821BAB0F300F3663E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = MainView/MainViewController.m; sourceTree = "<group>"; };
+		AB1AD71921BAB0F300F3663E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = MainView/MainViewController.xib; sourceTree = "<group>"; };
+		AB1AD71C21BAB0FD00F3663E /* AGBase32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGBase32.m; path = VpnPassword/OTP/AGBase32.m; sourceTree = SOURCE_ROOT; };
+		AB1AD71D21BAB0FD00F3663E /* AeroGearOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeroGearOTP.h; path = VpnPassword/OTP/AeroGearOTP.h; sourceTree = SOURCE_ROOT; };
+		AB1AD71E21BAB0FD00F3663E /* AGStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGStringEncoding.h; path = VpnPassword/OTP/AGStringEncoding.h; sourceTree = SOURCE_ROOT; };
+		AB1AD71F21BAB0FD00F3663E /* AGClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGClock.h; path = VpnPassword/OTP/AGClock.h; sourceTree = SOURCE_ROOT; };
+		AB1AD72021BAB0FD00F3663E /* AGStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGStringEncoding.m; path = VpnPassword/OTP/AGStringEncoding.m; sourceTree = SOURCE_ROOT; };
+		AB1AD72121BAB0FD00F3663E /* AGTotp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTotp.m; path = VpnPassword/OTP/AGTotp.m; sourceTree = SOURCE_ROOT; };
+		AB1AD72221BAB0FD00F3663E /* AGBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGBase32.h; path = VpnPassword/OTP/AGBase32.h; sourceTree = SOURCE_ROOT; };
+		AB1AD72321BAB0FD00F3663E /* AGClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGClock.m; path = VpnPassword/OTP/AGClock.m; sourceTree = SOURCE_ROOT; };
+		AB1AD72421BAB0FD00F3663E /* AGOtp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGOtp.m; path = VpnPassword/OTP/AGOtp.m; sourceTree = SOURCE_ROOT; };
+		AB1AD72521BAB0FD00F3663E /* AGOtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGOtp.h; path = VpnPassword/OTP/AGOtp.h; sourceTree = SOURCE_ROOT; };
+		AB1AD72621BAB0FD00F3663E /* AGTotp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTotp.h; path = VpnPassword/OTP/AGTotp.h; sourceTree = SOURCE_ROOT; };
+		AB1AD72C21BAB10500F3663E /* MenuHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuHandler.h; path = MenuHandler/MenuHandler.h; sourceTree = "<group>"; };
+		AB1AD72D21BAB10500F3663E /* MenuHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuHandler.m; path = MenuHandler/MenuHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB1AD6CD21BAAF4100F3663E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1AD6E021BAAF4100F3663E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1AD6EB21BAAF4100F3663E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB1AD6C721BAAF4100F3663E = {
+			isa = PBXGroup;
+			children = (
+				AB1AD6D221BAAF4100F3663E /* VpnPassword */,
+				AB1AD6E621BAAF4100F3663E /* VpnPasswordTests */,
+				AB1AD6F121BAAF4100F3663E /* VpnPasswordUITests */,
+				AB1AD6D121BAAF4100F3663E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB1AD6D121BAAF4100F3663E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD6D021BAAF4100F3663E /* VpnPassword.app */,
+				AB1AD6E321BAAF4100F3663E /* VpnPasswordTests.xctest */,
+				AB1AD6EE21BAAF4100F3663E /* VpnPasswordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB1AD6D221BAAF4100F3663E /* VpnPassword */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD71021BAB0C300F3663E /* GeneratorManager */,
+				AB1AD70F21BAB0B900F3663E /* LocalStorage */,
+				AB1AD70D21BAB0A200F3663E /* MainView */,
+				AB1AD70C21BAB06400F3663E /* OTP */,
+				AB1AD70B21BAB05B00F3663E /* MenuHandler */,
+				AB1AD6D321BAAF4100F3663E /* AppDelegate.h */,
+				AB1AD6D421BAAF4100F3663E /* AppDelegate.m */,
+				AB1AD6D621BAAF4100F3663E /* Assets.xcassets */,
+				AB1AD6D821BAAF4100F3663E /* MainMenu.xib */,
+				AB1AD6DB21BAAF4100F3663E /* Info.plist */,
+				AB1AD6DC21BAAF4100F3663E /* main.m */,
+				AB1AD6DE21BAAF4100F3663E /* VpnPassword.entitlements */,
+			);
+			path = VpnPassword;
+			sourceTree = "<group>";
+		};
+		AB1AD6E621BAAF4100F3663E /* VpnPasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD6E721BAAF4100F3663E /* VpnPasswordTests.m */,
+				AB1AD6E921BAAF4100F3663E /* Info.plist */,
+			);
+			path = VpnPasswordTests;
+			sourceTree = "<group>";
+		};
+		AB1AD6F121BAAF4100F3663E /* VpnPasswordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD6F221BAAF4100F3663E /* VpnPasswordUITests.m */,
+				AB1AD6F421BAAF4100F3663E /* Info.plist */,
+			);
+			path = VpnPasswordUITests;
+			sourceTree = "<group>";
+		};
+		AB1AD70B21BAB05B00F3663E /* MenuHandler */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD72C21BAB10500F3663E /* MenuHandler.h */,
+				AB1AD72D21BAB10500F3663E /* MenuHandler.m */,
+			);
+			name = MenuHandler;
+			sourceTree = "<group>";
+		};
+		AB1AD70C21BAB06400F3663E /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD71D21BAB0FD00F3663E /* AeroGearOTP.h */,
+				AB1AD72221BAB0FD00F3663E /* AGBase32.h */,
+				AB1AD71C21BAB0FD00F3663E /* AGBase32.m */,
+				AB1AD71F21BAB0FD00F3663E /* AGClock.h */,
+				AB1AD72321BAB0FD00F3663E /* AGClock.m */,
+				AB1AD72521BAB0FD00F3663E /* AGOtp.h */,
+				AB1AD72421BAB0FD00F3663E /* AGOtp.m */,
+				AB1AD71E21BAB0FD00F3663E /* AGStringEncoding.h */,
+				AB1AD72021BAB0FD00F3663E /* AGStringEncoding.m */,
+				AB1AD72621BAB0FD00F3663E /* AGTotp.h */,
+				AB1AD72121BAB0FD00F3663E /* AGTotp.m */,
+			);
+			name = OTP;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		AB1AD70D21BAB0A200F3663E /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD71721BAB0F300F3663E /* MainViewController.h */,
+				AB1AD71821BAB0F300F3663E /* MainViewController.m */,
+				AB1AD71921BAB0F300F3663E /* MainViewController.xib */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		AB1AD70F21BAB0B900F3663E /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD71521BAB0E000F3663E /* LocalStorage.h */,
+				AB1AD71421BAB0E000F3663E /* LocalStorage.m */,
+			);
+			name = LocalStorage;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AB1AD71021BAB0C300F3663E /* GeneratorManager */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AD71121BAB0D000F3663E /* GeneratorManager.h */,
+				AB1AD71221BAB0D000F3663E /* GeneratorManager.m */,
+			);
+			name = GeneratorManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB1AD6CF21BAAF4100F3663E /* VpnPassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1AD6F721BAAF4100F3663E /* Build configuration list for PBXNativeTarget "VpnPassword" */;
+			buildPhases = (
+				AB1AD6CC21BAAF4100F3663E /* Sources */,
+				AB1AD6CD21BAAF4100F3663E /* Frameworks */,
+				AB1AD6CE21BAAF4100F3663E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VpnPassword;
+			productName = VpnPassword;
+			productReference = AB1AD6D021BAAF4100F3663E /* VpnPassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB1AD6E221BAAF4100F3663E /* VpnPasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1AD6FA21BAAF4100F3663E /* Build configuration list for PBXNativeTarget "VpnPasswordTests" */;
+			buildPhases = (
+				AB1AD6DF21BAAF4100F3663E /* Sources */,
+				AB1AD6E021BAAF4100F3663E /* Frameworks */,
+				AB1AD6E121BAAF4100F3663E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB1AD6E521BAAF4100F3663E /* PBXTargetDependency */,
+			);
+			name = VpnPasswordTests;
+			productName = VpnPasswordTests;
+			productReference = AB1AD6E321BAAF4100F3663E /* VpnPasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB1AD6ED21BAAF4100F3663E /* VpnPasswordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1AD6FD21BAAF4100F3663E /* Build configuration list for PBXNativeTarget "VpnPasswordUITests" */;
+			buildPhases = (
+				AB1AD6EA21BAAF4100F3663E /* Sources */,
+				AB1AD6EB21BAAF4100F3663E /* Frameworks */,
+				AB1AD6EC21BAAF4100F3663E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB1AD6F021BAAF4100F3663E /* PBXTargetDependency */,
+			);
+			name = VpnPasswordUITests;
+			productName = VpnPasswordUITests;
+			productReference = AB1AD6EE21BAAF4100F3663E /* VpnPasswordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB1AD6C821BAAF4100F3663E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Gabriel Vieira Figueiredo Tomaz";
+				TargetAttributes = {
+					AB1AD6CF21BAAF4100F3663E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AB1AD6E221BAAF4100F3663E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB1AD6CF21BAAF4100F3663E;
+					};
+					AB1AD6ED21BAAF4100F3663E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB1AD6CF21BAAF4100F3663E;
+					};
+				};
+			};
+			buildConfigurationList = AB1AD6CB21BAAF4100F3663E /* Build configuration list for PBXProject "VpnPassword" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB1AD6C721BAAF4100F3663E;
+			productRefGroup = AB1AD6D121BAAF4100F3663E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB1AD6CF21BAAF4100F3663E /* VpnPassword */,
+				AB1AD6E221BAAF4100F3663E /* VpnPasswordTests */,
+				AB1AD6ED21BAAF4100F3663E /* VpnPasswordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB1AD6CE21BAAF4100F3663E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1AD6D721BAAF4100F3663E /* Assets.xcassets in Resources */,
+				AB1AD71B21BAB0F300F3663E /* MainViewController.xib in Resources */,
+				AB1AD6DA21BAAF4100F3663E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1AD6E121BAAF4100F3663E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1AD6EC21BAAF4100F3663E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB1AD6CC21BAAF4100F3663E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1AD72E21BAB10500F3663E /* MenuHandler.m in Sources */,
+				AB1AD71321BAB0D000F3663E /* GeneratorManager.m in Sources */,
+				AB1AD71621BAB0E000F3663E /* LocalStorage.m in Sources */,
+				AB1AD72921BAB0FD00F3663E /* AGTotp.m in Sources */,
+				AB1AD6DD21BAAF4100F3663E /* main.m in Sources */,
+				AB1AD71A21BAB0F300F3663E /* MainViewController.m in Sources */,
+				AB1AD6D521BAAF4100F3663E /* AppDelegate.m in Sources */,
+				AB1AD72821BAB0FD00F3663E /* AGStringEncoding.m in Sources */,
+				AB1AD72B21BAB0FD00F3663E /* AGOtp.m in Sources */,
+				AB1AD72A21BAB0FD00F3663E /* AGClock.m in Sources */,
+				AB1AD72721BAB0FD00F3663E /* AGBase32.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1AD6DF21BAAF4100F3663E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1AD6E821BAAF4100F3663E /* VpnPasswordTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1AD6EA21BAAF4100F3663E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1AD6F321BAAF4100F3663E /* VpnPasswordUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB1AD6E521BAAF4100F3663E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB1AD6CF21BAAF4100F3663E /* VpnPassword */;
+			targetProxy = AB1AD6E421BAAF4100F3663E /* PBXContainerItemProxy */;
+		};
+		AB1AD6F021BAAF4100F3663E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB1AD6CF21BAAF4100F3663E /* VpnPassword */;
+			targetProxy = AB1AD6EF21BAAF4100F3663E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB1AD6D821BAAF4100F3663E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB1AD6D921BAAF4100F3663E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB1AD6F521BAAF4100F3663E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB1AD6F621BAAF4100F3663E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB1AD6F821BAAF4100F3663E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VpnPassword/VpnPassword.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5HVKQ7JB89;
+				INFOPLIST_FILE = VpnPassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gv.VpnPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB1AD6F921BAAF4100F3663E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VpnPassword/VpnPassword.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5HVKQ7JB89;
+				INFOPLIST_FILE = VpnPassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gv.VpnPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AB1AD6FB21BAAF4100F3663E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5HVKQ7JB89;
+				INFOPLIST_FILE = VpnPasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gv.VpnPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VpnPassword.app/Contents/MacOS/VpnPassword";
+			};
+			name = Debug;
+		};
+		AB1AD6FC21BAAF4100F3663E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5HVKQ7JB89;
+				INFOPLIST_FILE = VpnPasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gv.VpnPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VpnPassword.app/Contents/MacOS/VpnPassword";
+			};
+			name = Release;
+		};
+		AB1AD6FE21BAAF4100F3663E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5HVKQ7JB89;
+				INFOPLIST_FILE = VpnPasswordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gv.VpnPasswordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VpnPassword;
+			};
+			name = Debug;
+		};
+		AB1AD6FF21BAAF4100F3663E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5HVKQ7JB89;
+				INFOPLIST_FILE = VpnPasswordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gv.VpnPasswordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VpnPassword;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB1AD6CB21BAAF4100F3663E /* Build configuration list for PBXProject "VpnPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1AD6F521BAAF4100F3663E /* Debug */,
+				AB1AD6F621BAAF4100F3663E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1AD6F721BAAF4100F3663E /* Build configuration list for PBXNativeTarget "VpnPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1AD6F821BAAF4100F3663E /* Debug */,
+				AB1AD6F921BAAF4100F3663E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1AD6FA21BAAF4100F3663E /* Build configuration list for PBXNativeTarget "VpnPasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1AD6FB21BAAF4100F3663E /* Debug */,
+				AB1AD6FC21BAAF4100F3663E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1AD6FD21BAAF4100F3663E /* Build configuration list for PBXNativeTarget "VpnPasswordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1AD6FE21BAAF4100F3663E /* Debug */,
+				AB1AD6FF21BAAF4100F3663E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB1AD6C821BAAF4100F3663E /* Project object */;
+}
