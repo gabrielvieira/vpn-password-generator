@@ -9,13 +9,15 @@
 #import "MainViewController.h"
 #import "LocalStorage.h"
 #import "GeneratorManager.h"
+#import "LockButton.h"
 
 @interface MainViewController ()
 
 @property (weak) IBOutlet NSSecureTextField *secretField;
 @property (weak) IBOutlet NSSecureTextField *passwordField;
-@property (weak) IBOutlet NSButton *saveButton;
 @property (weak) IBOutlet NSButton *generateButton;
+@property (weak) IBOutlet LockButton *secretLockButton;
+@property (weak) IBOutlet LockButton *passwordLockButton;
 
 @end
 
@@ -30,6 +32,8 @@
     
     self.secretField.focusRingType = NSFocusRingTypeNone;
     self.passwordField.focusRingType = NSFocusRingTypeNone;
+    self.secretLockButton.delegate = self;
+    self.passwordLockButton.delegate = self;
     
     [self populateFields];
 }
@@ -37,34 +41,17 @@
 - (void)populateFields {
     
     if (![[LocalStorage getSecret] isEqualToString:@""]) {
-        
         self.secretField.stringValue = [LocalStorage getSecret];
-        [self.secretField setEnabled:NO];
     }
     
     if (![[LocalStorage getPassword] isEqualToString:@""]) {
-        
         self.passwordField.stringValue = [LocalStorage getPassword];
-        [self.passwordField setEnabled:NO];
     }
+    
+    [self.secretField setEnabled:NO];
+    [self.passwordField setEnabled:NO];
 }
 
-- (IBAction)saveDidTap:(id)sender {
-    
-    if ([self.secretField.stringValue isEqualToString:@""] || [self.passwordField.stringValue isEqualToString:@""]) {
-        
-        //show error
-        return;
-    }
-    
-    [LocalStorage saveSecret:self.secretField.stringValue];
-    [LocalStorage savePassword:self.passwordField.stringValue];
-    [[self generateButton] setEnabled: YES];
-    
-    [self.passwordField setEnabled:NO];
-    [self.secretField setEnabled:NO];
-    
-}
 - (IBAction)generateDidTap:(id)sender {
     
     NSString *vpnPassword = [GeneratorManager generateVpnPassword];
@@ -72,14 +59,39 @@
     [[NSPasteboard generalPasteboard] setString:vpnPassword forType:NSStringPboardType];
 }
 
-- (IBAction)clearDidTap:(id)sender {
+- (void)LockButtonDidTap:(LockButton *)sender withState:(BOOL)lock {
     
-    [LocalStorage saveSecret:nil];
-    [LocalStorage savePassword:nil];
-    self.passwordField.stringValue = @"";
-    self.secretField.stringValue = @"";
-    [self.passwordField setEnabled:YES];
-    [self.secretField setEnabled:YES];
+    if (sender == self.secretLockButton) {
+    
+        if (lock) {
+        
+            if (![self.secretField.stringValue isEqualToString:@""]) {
+                
+                [LocalStorage saveSecret:self.secretField.stringValue];
+            }
+            
+            [self.secretField setEnabled:NO];
+            
+        } else {
+            [self.secretField setEnabled:YES];
+        }
+    }
+    
+    if (sender == self.passwordLockButton) {
+        
+        if (lock) {
+            
+            if (![self.passwordField.stringValue isEqualToString:@""]) {
+                
+                [LocalStorage savePassword:self.passwordField.stringValue];
+            }
+            
+            [self.passwordField setEnabled:NO];
+            
+        } else {
+            [self.passwordField setEnabled:YES];
+        }
+    }
 }
 
 @end

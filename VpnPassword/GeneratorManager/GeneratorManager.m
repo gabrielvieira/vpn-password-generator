@@ -14,7 +14,9 @@
 
 + (NSString *)generateOTPToken:(NSString *)secret {
 
-    AGTotp *generator = [[AGTotp alloc] initWithSecret:[AGBase32 base32Decode:secret]];
+    AGTotp *generator = [[AGTotp alloc] initWithDigits:6 andSecret:[AGBase32 base32Decode:secret]];
+    
+//    AGTotp *generator = [[AGTotp alloc] initWithSecret:[AGBase32 base32Decode:secret]];
     // generate token
     NSString *totp = [generator generateOTP];
 

@@ -23,6 +23,7 @@
 		AB1AD72A21BAB0FD00F3663E /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72321BAB0FD00F3663E /* AGClock.m */; };
 		AB1AD72B21BAB0FD00F3663E /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72421BAB0FD00F3663E /* AGOtp.m */; };
 		AB1AD72E21BAB10500F3663E /* MenuHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72D21BAB10500F3663E /* MenuHandler.m */; };
+		ABF1784C21BF057D001853DC /* LockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1784B21BF057D001853DC /* LockButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		AB1AD72621BAB0FD00F3663E /* AGTotp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTotp.h; path = VpnPassword/OTP/AGTotp.h; sourceTree = SOURCE_ROOT; };
 		AB1AD72C21BAB10500F3663E /* MenuHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuHandler.h; path = MenuHandler/MenuHandler.h; sourceTree = "<group>"; };
 		AB1AD72D21BAB10500F3663E /* MenuHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuHandler.m; path = MenuHandler/MenuHandler.m; sourceTree = "<group>"; };
+		ABF1784A21BF057D001853DC /* LockButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockButton.h; sourceTree = "<group>"; };
+		ABF1784B21BF057D001853DC /* LockButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 		AB1AD6D221BAAF4100F3663E /* VpnPassword */ = {
 			isa = PBXGroup;
 			children = (
+				ABF1784921BF0559001853DC /* LockButton */,
 				AB1AD71021BAB0C300F3663E /* GeneratorManager */,
 				AB1AD70F21BAB0B900F3663E /* LocalStorage */,
 				AB1AD70D21BAB0A200F3663E /* MainView */,
@@ -185,8 +189,7 @@
 				AB1AD72621BAB0FD00F3663E /* AGTotp.h */,
 				AB1AD72121BAB0FD00F3663E /* AGTotp.m */,
 			);
-			name = OTP;
-			path = "New Group1";
+			path = OTP;
 			sourceTree = "<group>";
 		};
 		AB1AD70D21BAB0A200F3663E /* MainView */ = {
@@ -205,8 +208,7 @@
 				AB1AD71521BAB0E000F3663E /* LocalStorage.h */,
 				AB1AD71421BAB0E000F3663E /* LocalStorage.m */,
 			);
-			name = LocalStorage;
-			path = "New Group";
+			path = LocalStorage;
 			sourceTree = "<group>";
 		};
 		AB1AD71021BAB0C300F3663E /* GeneratorManager */ = {
@@ -216,6 +218,15 @@
 				AB1AD71221BAB0D000F3663E /* GeneratorManager.m */,
 			);
 			name = GeneratorManager;
+			sourceTree = "<group>";
+		};
+		ABF1784921BF0559001853DC /* LockButton */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1784A21BF057D001853DC /* LockButton.h */,
+				ABF1784B21BF057D001853DC /* LockButton.m */,
+			);
+			name = LockButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF1784C21BF057D001853DC /* LockButton.m in Sources */,
 				AB1AD72E21BAB10500F3663E /* MenuHandler.m in Sources */,
 				AB1AD71321BAB0D000F3663E /* GeneratorManager.m in Sources */,
 				AB1AD71621BAB0E000F3663E /* LocalStorage.m in Sources */,
@@ -521,6 +533,7 @@
 				DEVELOPMENT_TEAM = 5HVKQ7JB89;
 				INFOPLIST_FILE = VpnPassword/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = gv.VpnPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -536,6 +549,7 @@
 				DEVELOPMENT_TEAM = 5HVKQ7JB89;
 				INFOPLIST_FILE = VpnPassword/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = gv.VpnPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

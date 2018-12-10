@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "LockButton.h"
 
-@interface MainViewController : NSViewController
+@interface MainViewController : NSViewController <LockButtonDelegate>
 
 @end
