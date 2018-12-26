@@ -23,6 +23,11 @@
 		AB1AD72A21BAB0FD00F3663E /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72321BAB0FD00F3663E /* AGClock.m */; };
 		AB1AD72B21BAB0FD00F3663E /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72421BAB0FD00F3663E /* AGOtp.m */; };
 		AB1AD72E21BAB10500F3663E /* MenuHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD72D21BAB10500F3663E /* MenuHandler.m */; };
+		ABE2B73921C0B11C005B70AD /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2B73821C0B11C005B70AD /* STPrivilegedTask.m */; };
+		ABE2B73E21C0B439005B70AD /* NSString+SeparatingIntoComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2B73C21C0B439005B70AD /* NSString+SeparatingIntoComponents.m */; };
+		ABE2B73F21C0B439005B70AD /* NSTask+OneLineTasksWithOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2B73D21C0B439005B70AD /* NSTask+OneLineTasksWithOutput.m */; };
+		ABE2B74321C0B822005B70AD /* ProxyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2B74221C0B822005B70AD /* ProxyManager.m */; };
+		ABE2B74521C0C71C005B70AD /* proxy.sh in Resources */ = {isa = PBXBuildFile; fileRef = ABE2B74421C0C71B005B70AD /* proxy.sh */; };
 		ABF1784C21BF057D001853DC /* LockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1784B21BF057D001853DC /* LockButton.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +83,15 @@
 		AB1AD72621BAB0FD00F3663E /* AGTotp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTotp.h; path = VpnPassword/OTP/AGTotp.h; sourceTree = SOURCE_ROOT; };
 		AB1AD72C21BAB10500F3663E /* MenuHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuHandler.h; path = MenuHandler/MenuHandler.h; sourceTree = "<group>"; };
 		AB1AD72D21BAB10500F3663E /* MenuHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuHandler.m; path = MenuHandler/MenuHandler.m; sourceTree = "<group>"; };
+		ABE2B73721C0B11B005B70AD /* STPrivilegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
+		ABE2B73821C0B11C005B70AD /* STPrivilegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
+		ABE2B73A21C0B438005B70AD /* NSTask+OneLineTasksWithOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTask+OneLineTasksWithOutput.h"; sourceTree = "<group>"; };
+		ABE2B73B21C0B438005B70AD /* NSString+SeparatingIntoComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SeparatingIntoComponents.h"; sourceTree = "<group>"; };
+		ABE2B73C21C0B439005B70AD /* NSString+SeparatingIntoComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SeparatingIntoComponents.m"; sourceTree = "<group>"; };
+		ABE2B73D21C0B439005B70AD /* NSTask+OneLineTasksWithOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTask+OneLineTasksWithOutput.m"; sourceTree = "<group>"; };
+		ABE2B74121C0B822005B70AD /* ProxyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProxyManager.h; path = STPrivilegedTask/ProxyManager.h; sourceTree = "<group>"; };
+		ABE2B74221C0B822005B70AD /* ProxyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProxyManager.m; path = STPrivilegedTask/ProxyManager.m; sourceTree = "<group>"; };
+		ABE2B74421C0C71B005B70AD /* proxy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = proxy.sh; path = ../../proxy.sh; sourceTree = "<group>"; };
 		ABF1784A21BF057D001853DC /* LockButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockButton.h; sourceTree = "<group>"; };
 		ABF1784B21BF057D001853DC /* LockButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +144,9 @@
 		AB1AD6D221BAAF4100F3663E /* VpnPassword */ = {
 			isa = PBXGroup;
 			children = (
+				ABE2B74421C0C71B005B70AD /* proxy.sh */,
+				ABE2B74021C0B7FF005B70AD /* ProxyManager */,
+				ABE2B73621C0B0E1005B70AD /* STPrivilegedTask */,
 				ABF1784921BF0559001853DC /* LockButton */,
 				AB1AD71021BAB0C300F3663E /* GeneratorManager */,
 				AB1AD70F21BAB0B900F3663E /* LocalStorage */,
@@ -218,6 +235,28 @@
 				AB1AD71221BAB0D000F3663E /* GeneratorManager.m */,
 			);
 			name = GeneratorManager;
+			sourceTree = "<group>";
+		};
+		ABE2B73621C0B0E1005B70AD /* STPrivilegedTask */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2B73B21C0B438005B70AD /* NSString+SeparatingIntoComponents.h */,
+				ABE2B73C21C0B439005B70AD /* NSString+SeparatingIntoComponents.m */,
+				ABE2B73721C0B11B005B70AD /* STPrivilegedTask.h */,
+				ABE2B73821C0B11C005B70AD /* STPrivilegedTask.m */,
+				ABE2B73A21C0B438005B70AD /* NSTask+OneLineTasksWithOutput.h */,
+				ABE2B73D21C0B439005B70AD /* NSTask+OneLineTasksWithOutput.m */,
+			);
+			path = STPrivilegedTask;
+			sourceTree = "<group>";
+		};
+		ABE2B74021C0B7FF005B70AD /* ProxyManager */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2B74121C0B822005B70AD /* ProxyManager.h */,
+				ABE2B74221C0B822005B70AD /* ProxyManager.m */,
+			);
+			name = ProxyManager;
 			sourceTree = "<group>";
 		};
 		ABF1784921BF0559001853DC /* LockButton */ = {
@@ -338,6 +377,7 @@
 				AB1AD6D721BAAF4100F3663E /* Assets.xcassets in Resources */,
 				AB1AD71B21BAB0F300F3663E /* MainViewController.xib in Resources */,
 				AB1AD6DA21BAAF4100F3663E /* MainMenu.xib in Resources */,
+				ABE2B74521C0C71C005B70AD /* proxy.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,12 +403,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF1784C21BF057D001853DC /* LockButton.m in Sources */,
+				ABE2B73E21C0B439005B70AD /* NSString+SeparatingIntoComponents.m in Sources */,
 				AB1AD72E21BAB10500F3663E /* MenuHandler.m in Sources */,
 				AB1AD71321BAB0D000F3663E /* GeneratorManager.m in Sources */,
 				AB1AD71621BAB0E000F3663E /* LocalStorage.m in Sources */,
 				AB1AD72921BAB0FD00F3663E /* AGTotp.m in Sources */,
+				ABE2B74321C0B822005B70AD /* ProxyManager.m in Sources */,
 				AB1AD6DD21BAAF4100F3663E /* main.m in Sources */,
 				AB1AD71A21BAB0F300F3663E /* MainViewController.m in Sources */,
+				ABE2B73F21C0B439005B70AD /* NSTask+OneLineTasksWithOutput.m in Sources */,
+				ABE2B73921C0B11C005B70AD /* STPrivilegedTask.m in Sources */,
 				AB1AD6D521BAAF4100F3663E /* AppDelegate.m in Sources */,
 				AB1AD72821BAB0FD00F3663E /* AGStringEncoding.m in Sources */,
 				AB1AD72B21BAB0FD00F3663E /* AGOtp.m in Sources */,

@@ -10,6 +10,7 @@
 #import "LocalStorage.h"
 #import "GeneratorManager.h"
 #import "LockButton.h"
+#import "ProxyManager.h"
 
 @interface MainViewController ()
 
@@ -50,6 +51,7 @@
     
     [self.secretField setEnabled:NO];
     [self.passwordField setEnabled:NO];
+    
 }
 
 - (IBAction)generateDidTap:(id)sender {
@@ -92,6 +94,10 @@
             [self.passwordField setEnabled:YES];
         }
     }
+}
+
+- (IBAction)proxySwitch:(id)sender {
+    [ProxyManager switchProxy];
 }
 
 @end
